@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "FSD"
+    "liveServer.settings.multiRootWorkspaceName": "FSD",
+    "liveServer.settings.port": 5501
 }
