@@ -2,122 +2,49 @@
 <html>
     <head>
         <title>Work</title>
-        <style>
-        html,body{
-            width: 100%;
-            height: 100%;
-          }
-          
-          .container{
-            padding: 20px 0;
-            margin: 70px;
-            width: 1140px;
-          }
-          
-          h1{
-            position: relative;
-            margin-bottom: 5px;
-            font-family: 'Oswald', sans-serif;
-            font-size: 44px;
-            text-transform: uppercase;
-            color: #424242;
-          }
-          
-          .gallery-wrap {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 70vh;
-          }
-          
-            
-    img {
-                float: left;
-                width: calc(100% - 350px - 10px);
-                vertical-align: middle;
-            }
-
-
-            @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-html, body{
-  height: 100%;
-  font-weight: 800;
-}
-
-body{
-  background: beige;
-  font-family: Arial;
-}
-
-svg {
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-  stroke: #4D163D;
-  animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-  stroke: #840037;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-  stroke: #022c0d;
-  animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-  stroke: #840037;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-  stroke: #f25c17;
-  animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-  stroke: #BD0034;
-  animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-  stroke: #FDB731;
-  animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-  100% {stroke-dashoffset: -35%;}
-}
-           
-        </style>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="gallery.css">
+        <script src="index.js"></script>
+        
     </head>
-<body topmargin="2px">
+<body topmargin="0px" background="abstract.jpg" > 
+<!--navigation bar-->
+  <nav class= "navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand"  href="index.html">HOME</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="index2.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+        </ul>
+        
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+  
+      </div>
+    </div>
+  </nav>
+  
     <svg viewBox="0 0 960 300">
         <symbol id="s-text">
           <text text-anchor="middle" x="50%" y="80%">G A LL E R Y</text>
@@ -133,31 +60,84 @@ svg {
           <use xlink:href="#s-text" class="text-copy"></use>
         </g>
       </svg>
+      
 
-   
-    <div class="container">
+
+      <div class="container">
+        <div class="top">
+            <ul>
+                <li><a href="#img_1"><img src="blue.jpg"></a></li>
+                  <li><a href="#img_2"><img src="dark green.jpg"></a></li>
+                  <li><a href="#img_3"><img src="green.jpg"></a></li>
+                  <li><a href="#img_4"><img src="https://th.bing.com/th/id/R.c346c7a8e840c17ecb16e8baf67be81a?rik=0sbs8i731lr58A&riu=http%3a%2f%2foddstuffmagazine.com%2fwp-content%2fuploads%2f2015%2f01%2fmonochromatic-interior-16-650x404.jpg&ehk=58hbfnT8tuxxAbjGyzPRss2Ou1Wug77LbF6zLLPtBZU%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"></a></li>
+                  <li><a href="#img_5"><img src="minimalist-interior-design-style.webp"></a></li>
+                  <li><a href="#img_6"><img src="jason-wang-NxAwryAbtIw-unsplash.jpg"></a></li>
+                  <li><a href="#img_7"><img src="yellow.jpg"></a></li>
+                  <li><a href="#img_8"><img src="tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering.jpg"></a></li>
+                  <li><a href="#img_9"><img src="living-room-interior-have-tv-cabinet-leather-armchair-with-green-wall-3d-rendering.jpg"></a></li>
+                  <li><a href="#img_10"><img src="https://th.bing.com/th/id/R.e44e51b8f62f6f45eb9f570a56738f82?rik=uz0LnSU2q1QlDg&riu=http%3a%2f%2fwww.onthelist.co.za%2fwp-content%2fuploads%2f2015%2f11%2fRed-Interiors-02.jpg&ehk=1Vd2bYXvjjrHbEsto4cAhX2s1qHLIt%2fyCDlCodtEddw%3d&risl=&pid=ImgRaw&r=0"></a></li>
+                  <li><a href="#img_11"><img src="https://th.bing.com/th/id/OIP.3cTSTnbvxqGXZZQomKnnsgHaE7?pid=ImgDet&rs=1"></a></li>
+                  <li><a href="#img_12"><img src="https://th.bing.com/th/id/R.f50edc2f4880e63027724b7d408ecbc5?rik=vmcnf7OX64cXUA&riu=http%3a%2f%2fbestofbestconstruction.com%2fwp-content%2fuploads%2f2017%2f12%2fPaint.jpg&ehk=3qTI1rWIFLqrb4uZIRU6fH8LRzy%2fNqeRCJp1mwmtEq0%3d&risl=&pid=ImgRaw&r=0"></a></li>
+                  <li><a href="#img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
+                  <li><a href="#img_14"><img src="dark green.jpg"></a></li>
+                  <li><a href="#img_15"><img src="contemporary-interior-design-style.webp"></a></li>
+                  <li><a href="#img_16"><img src="fo.jpg"></a></li>
+                  </ul>
+              <a href="#_1" class="lightbox trans" id="img_1"><img src="blue.jpg"></a>
+              <a href="#_2" class="lightbox trans" id="img_2"><img src="dark green.jpg"></a>
+              <a href="#_3" class="lightbox trans" id="img_3"><img src="green.jpg"></a>
+              <a href="#_4" class="lightbox trans" id="img_4"><img src="contemporary-interior-design-style.webp"></a>
+              <a href="#_5" class="lightbox trans" id="img_5"><img src="minimalist-interior-design-style.webp"></a>
+              <a href="#_6" class="lightbox trans" id="img_6"><img src="jason-wang-NxAwryAbtIw-unsplash.jpg"></a>
+              <a href="#_7" class="lightbox trans" id="img_7"><img src="yellow.jpg"></a>
+              <a href="#_8" class="lightbox trans" id="img_8"><img src="tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering.jpg"></a>
+              <a href="#_9" class="lightbox trans" id="img_9"><img src="living-room-interior-have-tv-cabinet-leather-armchair-with-green-wall-3d-rendering.jpg"></a>
+              <a href="#_10" class="lightbox trans" id="img_10"><img src="https://th.bing.com/th/id/R.e44e51b8f62f6f45eb9f570a56738f82?rik=uz0LnSU2q1QlDg&riu=http%3a%2f%2fwww.onthelist.co.za%2fwp-content%2fuploads%2f2015%2f11%2fRed-Interiors-02.jpg&ehk=1Vd2bYXvjjrHbEsto4cAhX2s1qHLIt%2fyCDlCodtEddw%3d&risl=&pid=ImgRaw&r=0"></a>
+              <a href="#_11" class="lightbox trans" id="img_11"><img src="https://th.bing.com/th/id/OIP.3cTSTnbvxqGXZZQomKnnsgHaE7?pid=ImgDet&rs=1"></a>
+              <a href="#_12" class="lightbox trans" id="img_12"><img src="https://th.bing.com/th/id/R.f50edc2f4880e63027724b7d408ecbc5?rik=vmcnf7OX64cXUA&riu=http%3a%2f%2fbestofbestconstruction.com%2fwp-content%2fuploads%2f2017%2f12%2fPaint.jpg&ehk=3qTI1rWIFLqrb4uZIRU6fH8LRzy%2fNqeRCJp1mwmtEq0%3d&risl=&pid=ImgRaw&r=0"></a>
+              <a href="#_13" class="lightbox trans" id="img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a>
+              <a href="#_14" class="lightbox trans" id="img_14"><img src="dark green.jpg"></a>
+              <a href="#_15" class="lightbox trans" id="img_15"><img src="contemporary-interior-design-style.webp"></a>
+              <a href="#_16" class="lightbox trans" id="img_16"><img src="fo.jpg"></a>
+              
+          </div>
+        </div>
         
-      
-        <div class="gallery-wrap">
-          <img src="spacejoy-IH7wPsjwomc-unsplash.jpg">
-          <img src="beazy-60SnthS09Ao-unsplash.jpg">
-          <img src="spacejoy-TKFskJy8PQ8-unsplash.jpg">
-          <img src="jorge-de-jorge-pHbAY99SRB4-unsplash.jpg">
-          <br>
-        </div>
-      
-       <img src="jason-wang-NxAwryAbtIw-unsplash.jpg" width="50%" height="50%" style="margin: right 2in;">
-       <div style="  margin-left: 80px; color:#022c0d ; margin-top: 50px;">Wide range of designs. Customization available.
-        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore<br/> magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-      
-        </div>
+  <!--BUTTON-->
+<button class="open-button html_button btn-left btn customButton large" onclick="openForm()">JOIN US</button>
 
-        <div class="gallery-wrap">
-            <img src="beazy-60SnthS09Ao-unsplash.jpg">
-            <img src="spacejoy-IH7wPsjwomc-unsplash.jpg">
-            <img src="jorge-de-jorge-pHbAY99SRB4-unsplash.jpg">
-            <img src="spacejoy-TKFskJy8PQ8-unsplash.jpg">
-            <br>
-        </div>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="font-family:Arial, Helvetica, sans-serif ;">Sign Up</h1>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="psw"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat your Password" name="rpsw" required>
+
+    <button type="submit" class="btn">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  
+    <div class="form-check d-flex justify-content-center mb-5">
+      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+      <label class="form-check-label" for="form2Example3">
+        I agree with all the statements in <a href="#!">Terms of service</a>
+      </label>
+    </div>
+   
+  </form>
+</div>         
+   
+    
+
+       
+
 </body>
 </html>

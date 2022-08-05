@@ -1,3 +1,5 @@
+
+
 p.ex1 {
     margin-left: 10%;
   }
@@ -12,6 +14,7 @@ p.ex1 {
     text-align: center;
     font-size: 18px;
   }
+  
   
   
   .center1 {
@@ -32,16 +35,18 @@ p.ex1 {
      text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
-      #0f2301 0%,
-      #0d8613 29%,
-      #ff1361 67%,
-      #fff800 100%
+      #05610b 40%,
+      #e6581c 29%,
+      #fff800 37%,
+      #ff1361 100%
+    
+
       
     );
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
-    color: rgb(220, 228, 220);
+    color: rgb(255, 255, 255);
     background-clip: text;
     
     -webkit-background-clip: text;
@@ -60,7 +65,7 @@ p.ex1 {
   .frame {
     width: 500px;
     height: 250px;
-    border: 8px double rgb(180, 255, 151);
+    border: 8px double rgb(252, 252, 252);
     border-radius: 2px;
     border-style: double;
     border-width: thick;
@@ -68,10 +73,16 @@ p.ex1 {
     margin: auto;
     padding: 15px 10px;
   }
-  
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+  }
   img {
     width: 100%;
     height: 100%;
+    
   }
   
   h1 {text-align: center;} 
@@ -85,10 +96,11 @@ p.ex1 {
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
+  background-color: rgb(255, 251, 7);
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 16px 20px;
-  border: none;
+  border: thick;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
@@ -102,16 +114,18 @@ p.ex1 {
   display: none;
   position: fixed;
   bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  right: 5px;
+  border: 3px solid #ffffff;
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  max-width: 500px;
   padding: 10px;
-  background-color: white;
+  background:rgb(252, 247, 247);
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 /* Full-width input fields */
@@ -120,12 +134,13 @@ p.ex1 {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #342828;
+  
 }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
+  background-color: rgb(247, 246, 246);
   outline: none;
 }
 
@@ -150,3 +165,24 @@ p.ex1 {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+.customButton { 
+  border:2.6px solid #FFEB14;
+  border-radius:75.8px;
+  padding:13.4px;
+   margin:12.8px;
+  background-color:#F9F967;
+  color:#000000;
+  font-weight:400;
+  opacity:1;
+  transition:0s;
+  } 
+  .customButton:hover {
+  cursor:pointer;
+  background-color:#E9F901;
+  opacity:0.5;
+  transition:1s;
+  color:#000000;
+  } 
+
+  

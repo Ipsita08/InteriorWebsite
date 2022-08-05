@@ -1,0 +1,332 @@
+html,body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container{
+    padding: 20px 0;
+    margin: 70px;
+    width: 1140px;
+  }
+  
+  h1{
+    position: relative;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #424242;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+    
+img {
+        float: left;
+        width: calc(100% - 350px - 10px);
+        vertical-align: middle;
+    }
+
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+height: 100%;
+
+
+}
+
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+svg {
+display: block;
+font: 10.5em 'Montserrat';
+width: 960px;
+height: 300px;
+margin: 0 auto;
+}
+
+.text-copy {
+fill: none;
+stroke: white;
+stroke-dasharray: 6% 29%;
+stroke-width: 5px;
+stroke-dashoffset: 0%;
+animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #4D163D;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #840037;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+fill: none;
+stroke: white;
+stroke-dasharray: 6% 29%;
+stroke-width: 5px;
+stroke-dashoffset: 0%;
+animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #022c0d;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #840037;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #f25c17;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #BD0034;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #fbedd3;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+.navbar{
+position: fixed;
+width: 100%;
+z-index: 1;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background-color: rgb(255, 251, 7);
+color: rgb(0, 0, 0);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 16px 20px;
+border: thick;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+z-index: 1;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 5px;
+border: 3px solid #ffffff;
+z-index: 1;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 500px;
+padding: 10px;
+background:rgb(252, 247, 247);
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #342828;
+
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: rgb(247, 246, 246);
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+.customButton { 
+border:2.6px solid #FFEB14;
+border-radius:75.8px;
+padding:13.4px;
+margin:12.8px;
+background-color:#F9F967;
+color:#000000;
+font-weight:400;
+opacity:1;
+transition:0s;
+} 
+.customButton:hover {
+cursor:pointer;
+background-color:#E9F901;
+opacity:0.5;
+transition:1s;
+color:#000000;
+} 
+
+*{margin: 0; padding: 0;}
+body{background-color: black;}
+.container
+{
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.trans
+{
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.top
+{
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+.top ul
+{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.top ul li
+{
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.top ul li::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  content: '';
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+  opacity: 0;
+  background-color: rgba(0,0,0,0.90);
+}
+.top ul li img
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.lightbox
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+.lightbox img
+{
+  max-width: 90%;
+  max-height: 80%;
+  position: relative;
+  top: -100%;
+  /* Transition */
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.lightbox:target
+{
+  outline: none;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  -webkit-transition: all 1.2s ease;
+}
+.lightbox:target img
+{
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
